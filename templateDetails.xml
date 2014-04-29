@@ -15,11 +15,22 @@
         <filename>index.php</filename>
 		<filename>framework.php</filename>
         <filename>templateDetails.xml</filename>
+        <filename>bower.json</filename>
+        <filename>Gruntfile.js</filename>
+        <filename>package.json</filename>
+        <filename>README.md</filename>
+        <filename>scss.inc.php</filename>
+        <filename>style.php</filename>
+        
 		<folder>css</folder>
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>language</folder>
 		<folder>js</folder>
+        <folder>bower_components</folder>
+        <folder>fonts</folder>
+        <folder>node_modules</folder>
+        <folder>scss</folder>
 	</files>
 
 	<positions>
