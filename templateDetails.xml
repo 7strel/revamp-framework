@@ -10,7 +10,7 @@
 	<license>GNU General Public License version 2 or later</license>
 	<version>1.0.0</version>
 	<description>TPL_REVAMP_DESCRIPTION</description>
-
+    
 	<files>
         <filename>index.php</filename>
 		<filename>framework.php</filename>
@@ -28,7 +28,6 @@
 		<folder>language</folder>
 		<folder>js</folder>
         <folder>bower_components</folder>
-        <folder>fonts</folder>
         <folder>node_modules</folder>
         <folder>scss</folder>
 	</files>
@@ -126,10 +125,10 @@
 		<language tag="en-GB">en-GB/en-GB.tpl_revamp.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_revamp.sys.ini</language>
 	</languages>
-
+    
 	<config>
 		<fields name="params">
-			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/joomlafoundation/" >
+			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/revamp/" >
 				<field name="loadMoo" type="radio" class="btn-group" default="0" label="TPL_SETTINGS_LOAD_MOO_LABEL" description="TPL_SETTINGS_LOAD_MOO_DESC">
 					<option value="1">TPL_SETTINGS_LOAD_MOO_YES</option>
 					<option value="0">TPL_SETTINGS_LOAD_MOO_NO</option>
@@ -140,7 +139,7 @@
                 <field name="showcaseColor" type="text" default="" label="Showcase Color" description="Custom Showcase Row Background Color" size="15" />
                 <field name="featureColor" type="text" default="" label="Feature Color" description="Custom Feature Row Background Color" size="15" />
                 <field name="utilityColor" type="text" default="" label="Utility Color" description="Custom Top Row Background Color" size="15" />
-                <field name="UtilityColor" type="text" default="" label="MainTop Color" description="Custom MainTop Row Background Color" size="15" />
+                <field name="maintopColor" type="text" default="" label="MainTop Color" description="Custom MainTop Row Background Color" size="15" />
                 <field name="mainColor" type="text" default="" label="Main/Article Row Color" description="Custom Main/Article Row Background Color" size="15" />
                 <field name="mainbottomColor" type="text" default="" label="MainBottom Color" description="Custom MainBottom Row Background Color" size="15" />
                 <field name="extensionColor" type="text" default="" label="Extension Color" description="Custom Extension Row Background Color" size="15" />
@@ -158,7 +157,7 @@
                 <field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
                 <field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
                 <field name="topbarTitle" type="text" default="Revamp" label="TPL_SETTINGS_TOPBAR_LABEL" description="TPL_SETTINGS_TOPBAR_DESC" size="15" />
-                <field name="customCSS" type="filelist" default="-1" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/joomlafoundation/css/" filter="" exclude="foundation\.css|foundation-icons\.css|normalize\.css|joomla\.css|templateCore\.css|index\.html" stripext="" />
+                <field name="customCSS" type="filelist" default="-1" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/revamp/css/" filter="" exclude="foundation\.css|foundation-icons\.css|normalize\.css|joomla\.css|templateCore\.css|index\.html" stripext="" />
                 <field name="compileSass" type="radio" class="btn-group" default="yes" label="Compile SASS" description="TPL_SETTINGS_COMPILE_SCSS">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>

@@ -33,8 +33,6 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 	<?php else : ?>
 	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/app.css" />
     <?php endif; ?>
-	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/foundation-icons.css" />
 	<?php if ($customCSS != -1) : ?>
       <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/<?php echo $customCSS ?>" />
     <?php endif; ?> 
@@ -96,7 +94,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
             background: <?php echo $extensionColor ?>;
           }
           <?php endif; ?>
-           <?php if ($$bottomColor != "") : ?>          
+           <?php if ($bottomColor != "") : ?>          
           .bottom-content {
             background: <?php echo $bottomColor ?>;
           }
@@ -677,7 +675,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 </div> <!-- navigation outer wrap -->
 <?php endif; ?>
 
-  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/bower_components/jquery/jquery.js"></script>
+  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/bower_components/foundation/js/foundation.min.js"></script>
   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/app.js" type="text/javascript"></script>
   <script>
