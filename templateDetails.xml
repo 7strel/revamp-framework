@@ -32,19 +32,96 @@
         <folder>node_modules</folder>
         <folder>scss</folder>
 	</files>
-
-	<positions>
-		<position>breadcrumbs</position>
-		<position>top</position>
-		<position>above</position>
-		<position>above-content</position>
-		<position>left</position>
-		<position>right</position>
-		<position>below-content</position>
-		<position>below</position>
-		<position>footer</position>
-	</positions>
-
+    
+    <positions>
+        <position>top</position>
+        <position>top_a</position>
+        <position>top_b</position>
+        <position>top_c</position>
+        <position>top_d</position>
+        <position>top_e</position>
+        <position>top_f</position>
+        <position>menu</position>
+        <position>header</position>
+        <position>header_a</position>
+        <position>header_b</position>
+        <position>header_c</position>
+        <position>header_d</position>
+        <position>header_e</position>
+        <position>header_f</position>
+        <position>showcase</position>
+        <position>showcase_a</position>
+        <position>showcase_b</position>
+        <position>showcase_c</position>
+        <position>showcase_d</position>
+        <position>showcase_e</position>
+        <position>showcase_f</position>
+        <position>feature</position>
+        <position>feature_a</position>
+        <position>feature_b</position>
+        <position>feature_c</position>
+        <position>feature_d</position>
+        <position>feature_e</position>
+        <position>feature_f</position>
+        <position>utility</position>
+        <position>utility_a</position>
+        <position>utility_b</position>
+        <position>utility_c</position>
+        <position>utility_d</position>
+        <position>utility_e</position>
+        <position>utility_f</position>
+        <position>maintop</position>
+        <position>maintop_a</position>
+        <position>maintop_b</position>
+        <position>maintop_c</position>
+        <position>maintop_d</position>
+        <position>maintop_e</position>
+        <position>maintop_f</position>
+        <position>sidebar_a</position>
+        <position>sidebar_b</position>
+        <position>content_top_a</position>
+        <position>content_top_b</position>
+        <position>content_top_c</position>
+        <position>content_bottom_a</position>
+        <position>content_bottom_b</position>
+        <position>content_bottom_c</position>
+        <position>mainbottom</position>
+        <position>mainbottom_a</position>
+        <position>mainbottom_b</position>
+        <position>mainbottom_c</position>
+        <position>mainbottom_d</position>
+        <position>mainbottom_e</position>
+        <position>mainbottom_f</position>
+        <position>extension</position>
+        <position>extension_a</position>
+        <position>extension_b</position>
+        <position>extension_c</position>
+        <position>extension_d</position>
+        <position>extension_e</position>
+        <position>extension_f</position>
+        <position>bottom</position>
+        <position>bottom_a</position>
+        <position>bottom_b</position>
+        <position>bottom_c</position>
+        <position>bottom_d</position>
+        <position>bottom_e</position>
+        <position>bottom_f</position>
+        <position>footer</position>
+        <position>footer_a</position>
+        <position>footer_b</position>
+        <position>footer_c</position>
+        <position>footer_d</position>
+        <position>footer_e</position>
+        <position>footer_f</position>
+        <position>copyright</position>
+        <position>copyright_a</position>
+        <position>copyright_b</position>
+        <position>copyright_c</position>
+        <position>copyright_d</position>
+        <position>copyright_e</position>
+        <position>copyright_f</position>
+    </positions>
+    
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.tpl_revamp.ini</language>
 		<language tag="en-GB">en-GB/en-GB.tpl_revamp.sys.ini</language>
@@ -52,64 +129,1110 @@
 
 	<config>
 		<fields name="params">
-			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/revamp/" >
-				<field name="loadMoo" type="radio" default="0" label="TPL_SETTINGS_LOAD_MOO_LABEL" description="TPL_SETTINGS_LOAD_MOO_DESC">
+			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/joomlafoundation/" >
+				<field name="loadMoo" type="radio" class="btn-group" default="0" label="TPL_SETTINGS_LOAD_MOO_LABEL" description="TPL_SETTINGS_LOAD_MOO_DESC">
 					<option value="1">TPL_SETTINGS_LOAD_MOO_YES</option>
 					<option value="0">TPL_SETTINGS_LOAD_MOO_NO</option>
 				</field>
-<field name="jQuery" type="radio" default="1" label="TPL_SETTINGS_LOAD_JQUERY_LABEL" description="TPL_SETTINGS_LOAD_JQUERY_DESC">
-					<option value="1">TPL_SETTINGS_LOAD_JQUERY_YES</option>
-					<option value="0">TPL_SETTINGS_LOAD_JQUERY_NO</option>
-				</field>
-				<field name="jQueryOff" type="radio" default="0" label="TPL_SETTINGS_LOAD_JQUERYOFF_LABEL" description="TPL_SETTINGS_LOAD_JQUERYOFF_DESC">
-					<option value="1">TPL_SETTINGS_LOAD_JQUERYOFF_YES</option>
-					<option value="0">TPL_SETTINGS_LOAD_JQUERY_NO</option>
-				</field>
-				<field name="noConflict" type="radio" default="0" label="jQuery noConflict?" description="Force jQuery into noConflict Mode - note, it isn't proper noConflict mode. It just changes $ to jQuery">
-					<option value="1">TPL_SETTINGS_LOAD_JQUERYOFF_YES</option>
-					<option value="0">TPL_SETTINGS_LOAD_JQUERY_NO</option>
-				</field>
-				<field type="spacer" default=" " />	
 				<field type="spacer" default=" " />
-					<field name="setWidth" type="text" default="1000" label="TPL_SETTINGS_SETWIDTH_LABEL" description="TPL_SETTINGS_SETWIDTH_DESC" size="15" />
-					<field name="widthUnit" type="radio" default="px" label="Set width in px or %" description="">
-					  <option value="px">1</option>
-					  <option value="%">2</option>
-					</field>
-					<field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
-					<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
-					<field name="topbarTitle" type="text" default="Revamp Framework" label="TPL_SETTINGS_TOPBAR_LABEL" description="TPL_SETTINGS_TOPBAR_DESC" size="15" />
-					<field name="customCSS" type="filelist" default="" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/revamp/css/" filter="" exclude="foundation\.css|templateCore\.css|index\.html" stripext="" />
-					<field name="rightwidth" type="list" default="4" label="TPL_SETTINGS_RIGHTWIDTH" description="TPL_SETTINGS_ANALYTICS_DESC" size="15">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">6</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-					</field>
-					<field name="leftwidth" type="list" default="4" label="TPL_SETTINGS_LEFTWIDTH" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" >
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">6</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-					</field>
-
-			</fieldset>			
+                <field name="topColor" type="text" default="" label="Top Color" description="Custom Top Row Background Color" size="15" />
+                <field name="headerColor" type="text" default="" label="Header Color" description="Custom Header Row Background Color" size="15" />
+                <field name="showcaseColor" type="text" default="" label="Showcase Color" description="Custom Showcase Row Background Color" size="15" />
+                <field name="featureColor" type="text" default="" label="Feature Color" description="Custom Feature Row Background Color" size="15" />
+                <field name="utilityColor" type="text" default="" label="Utility Color" description="Custom Top Row Background Color" size="15" />
+                <field name="UtilityColor" type="text" default="" label="MainTop Color" description="Custom MainTop Row Background Color" size="15" />
+                <field name="mainColor" type="text" default="" label="Main/Article Row Color" description="Custom Main/Article Row Background Color" size="15" />
+                <field name="mainbottomColor" type="text" default="" label="MainBottom Color" description="Custom MainBottom Row Background Color" size="15" />
+                <field name="extensionColor" type="text" default="" label="Extension Color" description="Custom Extension Row Background Color" size="15" />
+                <field name="bottomColor" type="text" default="" label="Bottom Color" description="Custom Bottom Row Background Color" size="15" />
+                <field name="footerColor" type="text" default="" label="Footer Color" description="Custom Footer Row Background Color" size="15" />
+                <field name="copyrightColor" type="text" default="" label="Copyright Color" description="Custom Copyright Row Background Color" size="15" />
+                <field name="socialrowColor" type="text" default="" label="Social Row Color" description="Custom Social Row Background Color" size="15" />
+				<field type="spacer" default=" " />
+                <field name="setWidth" type="text" default="1024" label="TPL_SETTINGS_SETWIDTH_LABEL" description="TPL_SETTINGS_SETWIDTH_DESC" size="15" />
+                <field name="widthUnit" type="radio" class="btn-group" default="px" label="Set width in px or %" description="">
+                    <option value="px">px</option>
+                    <option value="%">%</option>
+                </field>
+                <field type="spacer" default=" " />
+                <field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
+                <field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
+                <field name="topbarTitle" type="text" default="Revamp" label="TPL_SETTINGS_TOPBAR_LABEL" description="TPL_SETTINGS_TOPBAR_DESC" size="15" />
+                <field name="customCSS" type="filelist" default="-1" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/joomlafoundation/css/" filter="" exclude="foundation\.css|foundation-icons\.css|normalize\.css|joomla\.css|templateCore\.css|index\.html" stripext="" />
+                <field name="compileSass" type="radio" class="btn-group" default="yes" label="Compile SASS" description="TPL_SETTINGS_COMPILE_SCSS">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </field>
+            </fieldset>
+            <fieldset name="Layouts" label="Layouts" class="row">
+                
+                <field name="topwidth_a" type="dropdown" class="btn-group" default="4" label="Top-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="topwidth_b" type="dropdown" class="btn-group" default="4" label="Top-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="topwidth_c" type="dropdown" class="btn-group" default="4" label="Top-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="topwidth_d" type="dropdown" class="btn-group" default="4" label="Top-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="topwidth_e" type="dropdown" class="btn-group" default="4" label="Top-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="topwidth_f" type="dropdown" class="btn-group" default="4" label="Top-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="headerwidth_a" type="dropdown" class="btn-group" default="4" label="Header-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="headerwidth_b" type="dropdown" class="btn-group" default="4" label="Header-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="headerwidth_c" type="dropdown" class="btn-group" default="4" label="Header-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="headerwidth_d" type="dropdown" class="btn-group" default="4" label="Header-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="headerwidth_e" type="dropdown" class="btn-group" default="4" label="Header-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="headerwidth_f" type="dropdown" class="btn-group" default="4" label="Header-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="showcasewidth_a" type="dropdown" class="btn-group" default="4" label="Showcase-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="showcasewidth_b" type="dropdown" class="btn-group" default="4" label="Showcase-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="showcasewidth_c" type="dropdown" class="btn-group" default="4" label="Showcase-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="showcasewidth_d" type="dropdown" class="btn-group" default="4" label="Showcase-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="showcasewidth_e" type="dropdown" class="btn-group" default="4" label="Showcase-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="showcasewidth_f" type="dropdown" class="btn-group" default="4" label="Showcase-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="featurewidth_a" type="dropdown" class="btn-group" default="4" label="Feature-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="featurewidth_b" type="dropdown" class="btn-group" default="4" label="Feature-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="featurewidth_c" type="dropdown" class="btn-group" default="4" label="Feature-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="featurewidth_d" type="dropdown" class="btn-group" default="4" label="Feature-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="featurewidth_e" type="dropdown" class="btn-group" default="4" label="Feature-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="featurewidth_f" type="dropdown" class="btn-group" default="4" label="Feature-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="utilitywidth_a" type="dropdown" class="btn-group" default="4" label="Utility-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="utilitywidth_b" type="dropdown" class="btn-group" default="4" label="Utility-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="utilitywidth_c" type="dropdown" class="btn-group" default="4" label="Utility-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="utilitywidth_d" type="dropdown" class="btn-group" default="4" label="Utility-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="utilitywidth_e" type="dropdown" class="btn-group" default="4" label="Utility-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="utilitywidth_f" type="dropdown" class="btn-group" default="4" label="Utility-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="maintopwidth_a" type="dropdown" class="btn-group" default="4" label="Maintop-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="maintopwidth_b" type="dropdown" class="btn-group" default="4" label="Maintop-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="maintopwidth_c" type="dropdown" class="btn-group" default="4" label="Maintop-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="maintopwidth_d" type="dropdown" class="btn-group" default="4" label="Maintop-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="maintopwidth_e" type="dropdown" class="btn-group" default="4" label="Maintop-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="maintopwidth_f" type="dropdown" class="btn-group" default="4" label="Maintop-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="sidebarwidth_a" type="dropdown" class="btn-group" default="4" label="sidebar-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="sidebarwidth_b" type="dropdown" class="btn-group" default="4" label="sidebar-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="content_topwidth_a" type="dropdown" class="btn-group" default="4" label="Content Top-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="content_topwidth_b" type="dropdown" class="btn-group" default="4" label="Content Top-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="content_topwidth_c" type="dropdown" class="btn-group" default="4" label="Content Top-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="content_bottomwidth_a" type="dropdown" class="btn-group" default="4" label="Content Bottom-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="content_bottomwidth_b" type="dropdown" class="btn-group" default="4" label="Content Bottom-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="content_bottomwidth_c" type="dropdown" class="btn-group" default="4" label="Content Bottom-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="mainbottomwidth_a" type="dropdown" class="btn-group" default="4" label="Main Bottom-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="mainbottomwidth_b" type="dropdown" class="btn-group" default="4" label="Main Bottom-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="mainbottomwidth_c" type="dropdown" class="btn-group" default="4" label="Main Bottom-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="mainbottomwidth_d" type="dropdown" class="btn-group" default="4" label="Main Bottom-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="mainbottomwidth_e" type="dropdown" class="btn-group" default="4" label="Main Bottom-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="mainbottomwidth_f" type="dropdown" class="btn-group" default="4" label="Main Bottom-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="extensionwidth_a" type="dropdown" class="btn-group" default="4" label="Extension-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="extensionwidth_b" type="dropdown" class="btn-group" default="4" label="Extension-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="extensionwidth_c" type="dropdown" class="btn-group" default="4" label="Extension-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="extensionwidth_d" type="dropdown" class="btn-group" default="4" label="Extension-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="extensionwidth_e" type="dropdown" class="btn-group" default="4" label="Extension-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="extensionwidth_f" type="dropdown" class="btn-group" default="4" label="Extension-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="bottomwidth_a" type="dropdown" class="btn-group" default="4" label="Bottom-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="bottomwidth_b" type="dropdown" class="btn-group" default="4" label="Bottom-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="bottomwidth_c" type="dropdown" class="btn-group" default="4" label="Bottom-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="bottomwidth_c" type="dropdown" class="btn-group" default="4" label="Bottom-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="bottomwidth_d" type="dropdown" class="btn-group" default="4" label="Bottom-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="bottomwidth_e" type="dropdown" class="btn-group" default="4" label="Bottom-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="bottomwidth_f" type="dropdown" class="btn-group" default="4" label="Bottom-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="footerwidth_a" type="dropdown" class="btn-group" default="4" label="Footer-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="footerwidth_b" type="dropdown" class="btn-group" default="4" label="Footer-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="footerwidth_c" type="dropdown" class="btn-group" default="4" label="Footer-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="footerwidth_d" type="dropdown" class="btn-group" default="4" label="Footer-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="footerwidth_e" type="dropdown" class="btn-group" default="4" label="Footer-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="footerwidth_f" type="dropdown" class="btn-group" default="4" label="Footer-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="copyrightwidth_a" type="dropdown" class="btn-group" default="4" label="Copyright-A" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="copyrightwidth_b" type="dropdown" class="btn-group" default="4" label="Copyright-B" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="copyrightwidth_c" type="dropdown" class="btn-group" default="4" label="Copyright-C" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="copyrightwidth_d" type="dropdown" class="btn-group" default="4" label="Copyright-D" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="copyrightwidth_e" type="dropdown" class="btn-group" default="4" label="Copyright-E" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="copyrightwidth_f" type="dropdown" class="btn-group" default="4" label="Copyright-F" size="15">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+			</fieldset>
+            <fieldset name="SOCIAL" label="TPL_SETTINGS_SOCIAL_LABEL">
+				<field name="twitter" type="text" default="" label="TPL_SETTINGS_TWITTER_LABEL" description="TPL_SETTINGS_TWITTER_DESC" />
+				<field name="twitterLink" type="text" default="" label="TPL_SETTINGS_TWITTER_LINK_LABEL" description="TPL_SETTINGS_TWITTER_LINK_DESC" filter="raw" />
+                
+				<field name="dribbble" type="text" default="" label="TPL_SETTINGS_DRIBBBLE_LABEL" description="TPL_SETTINGS_DRIBBBLE_DESC" />
+				<field name="dribbbleLink" type="text" default="" label="TPL_SETTINGS_DRIBBBLE_LINK_LABEL" description="TPL_SETTINGS_DRIBBBLE_LINK_DESC" filter="raw" />
+                
+				<field name="facebook" type="text" default="" label="TPL_SETTINGS_FACEBOOK_LABEL" description="TPL_SETTINGS_FACEBOOK_DESC" />
+				<field name="facebookLink" type="text" default="" label="TPL_SETTINGS_FACEBOOK_LINK_LABEL" description="TPL_SETTINGS_FACEBOOK_LINK_DESC" filter="raw" />
+                
+				<field name="googleplus" type="text" default="" label="TPL_SETTINGS_GOOGLEPLUS_LABEL" description="TPL_SETTINGS_GOOGLEPLUS_DESC" />
+				<field name="googleplusLink" type="text" default="" label="TPL_SETTINGS_GOOGLEPLUS_LINK_LABEL" description="TPL_SETTINGS_GOOGLEPLUS_LINK_DESC" filter="raw" />
+                
+				<field name="github" type="text" default="" label="TPL_SETTINGS_GITHUB_LABEL" description="TPL_SETTINGS_GITHUB_DESC" />
+				<field name="githubLink" type="text" default="" label="TPL_SETTINGS_GITHUB_LINK_LABEL" description="TPL_SETTINGS_GITHUB_LINK_DESC" filter="raw" />
+			</fieldset>
 		</fields>
 	</config>
 </extension>
