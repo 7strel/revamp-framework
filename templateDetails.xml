@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
 <extension version="2.5" type="template" client="site">
-	<name>SiegeEngine2</name>
-	<creationDate>April, 2013</creationDate>
-	<author>Antony Doyle</author>
-	<authorEmail>antony@siege21.com</authorEmail>
-	<authorUrl>http://www.antonydoyle.co.uk</authorUrl>
-	<copyright>Copyright (C) 2013 Antony Doyle | Siege21.com | Siegeworks. All rights Reserved</copyright>
+	<name>Revamp</name>
+	<creationDate>April, 2014</creationDate>
+	<author>Ben Schram</author>
+	<authorEmail>ben@schramdesignteam.com</authorEmail>
+	<authorUrl>http://revamp.schramdesignteam.com</authorUrl>
+	<copyright>Copyright (C) 2014 Ben Schram</copyright>
 	<license>GNU General Public License version 2 or later</license>
-	<version>2.0.4</version>	
-	<description>TPL_SIEGEENGINE_DESCRIPTION</description>
+	<version>1.0.0</version>
+	<description>TPL_REVAMP_DESCRIPTION</description>
 
 	<files>
         <filename>index.php</filename>
@@ -35,13 +35,13 @@
 	</positions>
 
 	<languages folder="language">
-		<language tag="en-GB">en-GB/en-GB.tpl_siegeengine2.ini</language>
-		<language tag="en-GB">en-GB/en-GB.tpl_siegeengine2.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_revamp.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_revamp.sys.ini</language>
 	</languages>
 
 	<config>
 		<fields name="params">
-			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/siegeengine/" >
+			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/revamp/" >
 				<field name="loadMoo" type="radio" default="0" label="TPL_SETTINGS_LOAD_MOO_LABEL" description="TPL_SETTINGS_LOAD_MOO_DESC">
 					<option value="1">TPL_SETTINGS_LOAD_MOO_YES</option>
 					<option value="0">TPL_SETTINGS_LOAD_MOO_NO</option>
@@ -67,8 +67,8 @@
 					</field>
 					<field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
 					<field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
-					<field name="topbarTitle" type="text" default="SiegeEngine2" label="TPL_SETTINGS_TOPBAR_LABEL" description="TPL_SETTINGS_TOPBAR_DESC" size="15" />
-					<field name="customCSS" type="filelist" default="" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/siegeengine2/css/" filter="" exclude="foundation\.css|templateCore\.css|index\.html" stripext="" />
+					<field name="topbarTitle" type="text" default="Revamp Framework" label="TPL_SETTINGS_TOPBAR_LABEL" description="TPL_SETTINGS_TOPBAR_DESC" size="15" />
+					<field name="customCSS" type="filelist" default="" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/revamp/css/" filter="" exclude="foundation\.css|templateCore\.css|index\.html" stripext="" />
 					<field name="rightwidth" type="list" default="4" label="TPL_SETTINGS_RIGHTWIDTH" description="TPL_SETTINGS_ANALYTICS_DESC" size="15">
 						<option value="1">1</option>
 						<option value="2">2</option>
