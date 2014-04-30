@@ -128,7 +128,7 @@
     
 	<config>
 		<fields name="params">
-			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/revamp-framework/" >
+			<fieldset name="TPL_SETTINGS_HEADER_ONE_TITLE" label="TPL_SETTINGS_HEADER_ONE_DESC" addfieldpath="/templates/revamp/" >
 				<field name="loadMoo" type="radio" class="btn-group" default="0" label="TPL_SETTINGS_LOAD_MOO_LABEL" description="TPL_SETTINGS_LOAD_MOO_DESC">
 					<option value="1">TPL_SETTINGS_LOAD_MOO_YES</option>
 					<option value="0">TPL_SETTINGS_LOAD_MOO_NO</option>
@@ -157,7 +157,7 @@
                 <field name="setGeneratorTag" type="text" default="" label="TPL_SETTINGS_GENERATOR_LABEL" description="TPL_SETTINGS_GENERATOR_DESC" size="85" />
                 <field name="analytics" type="text" default="UA-XXXXX-X" label="TPL_SETTINGS_ANALYTICS_LABEL" description="TPL_SETTINGS_ANALYTICS_DESC" size="15" />
                 <field name="topbarTitle" type="text" default="Revamp" label="TPL_SETTINGS_TOPBAR_LABEL" description="TPL_SETTINGS_TOPBAR_DESC" size="15" />
-                <field name="customCSS" type="filelist" default="-1" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/revamp-framework/css/" filter="" exclude="foundation\.css|foundation-icons\.css|normalize\.css|joomla\.css|templateCore\.css|index\.html" stripext="" />
+                <field name="customCSS" type="filelist" default="-1" label="TPL_SETTINGS_CUSTOM_CSS_LABEL" description="TPL_SETTINGS_CUSTOM_CSS_DESC" directory="templates/revamp/css/" filter="" exclude="foundation\.css|foundation-icons\.css|normalize\.css|joomla\.css|templateCore\.css|index\.html" stripext="" />
                 <field name="compileSass" type="radio" class="btn-group" default="yes" label="Compile SASS" description="TPL_SETTINGS_COMPILE_SCSS">
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
