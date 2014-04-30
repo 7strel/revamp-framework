@@ -368,7 +368,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 </section>
 <?php /** End maintop Content **/ } ?>
 
-<?php /** Begin main Content **/ if ( $sidebar_a_content  or $sidebar_a_content or $content_bottom_a_content  or $content_bottom_b_content or $content_bottom_c_content or $content_top_a_content  or $content_top_b_content or $content_top_c_content or JRequest::getVar( 'view' ) == 'article' or JRequest::getVar('view')=='section' or JRequest::getVar('view') == 'category'  ) { ?>
+<?php /** Begin main Content **/ if ( $sidebar_a_content  or $sidebar_a_content or $content_bottom_a_content  or $content_bottom_b_content or $content_bottom_c_content or $content_top_a_content  or $content_top_b_content or $content_top_c_content or !empty($ndata)  ) { ?>
 <section class="main-content">
     <div class="row">
     
@@ -399,13 +399,13 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
           </div>
           <?php } ?>
 
-        <?php if( JRequest::getVar( 'view' ) == 'article' or JRequest::getVar('view')=='section' or JRequest::getVar('view') == 'category'   ): ?>
+        <?php if(!empty($ndata)) { ?>
           <div class="row">
           <div class="article small-12 columns">
             <jdoc:include type="component" /> 
           </div> 
           </div>
-        <?php endif; ?>
+        <?php } ?>
 
 <?php if ( $content_bottom_a_content  or $content_bottom_b_content or $content_bottom_c_content ) { ?>
           <div class="row">
