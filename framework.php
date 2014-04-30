@@ -336,3 +336,7 @@ if ( !$loadMoo ) {
 }
 
 #-------------End Construct Code--------------------------------------#
+$data  = $doc->getBuffer('component');
+$sPattern = '/\s*/m'; 
+$sReplace = '';
+$ndata = preg_replace( $sPattern, $sReplace, $data );
