@@ -123,7 +123,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/framework.php';
 <div class="off-canvas-wrap"> <!-- navigation outer wrap -->
   <div class="inner-wrap"> <!-- navigation inner wrap -->
       <div class="menu">
-        <jdoc:include type="modules" name="menu" style="revamp"
+        <jdoc:include type="modules" name="menu" style="revamp" />
       </div>
 <?php endif; ?>
 
